@@ -15,8 +15,9 @@ import creature as cr
 WIDTH = 500
 HEIGHT = 500
 
-INITIAL_PLANT_POPULATION_SIZE = 50
-plants = [cr.Plant((59, 189, 33), int(random.random()*WIDTH), int(random.random()*HEIGHT)) for i in range(INITIAL_PLANT_POPULATION_SIZE)]
+INITIAL_PLANT_POPULATION_SIZE = 20
+
+plants = [cr.Plant(int(random.random()*WIDTH), int(random.random()*HEIGHT), (59, 189, 33)) for i in range(INITIAL_PLANT_POPULATION_SIZE)]
 
 def setup():
     background(255, 255, 255)
